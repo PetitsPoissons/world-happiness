@@ -120,13 +120,15 @@ section#showcase {
   transition: all 0.5s ease-in-out;
 }
 
-/* ----------- About Section ----------- */
-.about-title {
+/* ----------- Content Sections ----------- */
+.about-title,
+.infographics-title {
   padding: 1rem 0;
   position: relative;
 }
 
-.about-title:after {
+.about-title:after,
+.infographics-title:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -134,4 +136,85 @@ section#showcase {
   height: 0.1rem;
   width: 100%;
   background-color: #ff6a25;
+}
+
+.infographics-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.infographics-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.infographics-card.chart {
+  grid-column: span 1;
+}
+
+.infographics-card.map {
+  grid-column: span 2;
+}
+
+.infographics-card.table {
+  grid-column: span 2;
+}
+
+.infographics-card.exploratory {
+  grid-column: span 1;
+}
+
+.infographics-card-img {
+  height: 100%;
+  width: 100%;
+}
+
+.infographics-card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.infographics-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(131, 58, 180, 0.9);
+  background: linear-gradient(
+    177deg,
+    rgba(131, 58, 180, 0.9) 0%,
+    rgba(253, 29, 29, 0.9) 50%,
+    rgba(252, 176, 69, 0.9) 100%
+  );
+  color: white;
+  padding: 1.5rem;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.5s ease-in-out;
+}
+
+.infographics-card-title {
+  font-size: 1.5rem;
+  color: #ff6a25;
+  text-transform: uppercase;
+}
+
+.infographics-card-para {
+  font-size: 1rem;
+}
+
+.infographics-card:hover .infographics-card-content,
+.infographics-card:active .infographics-card-content {
+  transform: scaleY(1);
+  transform-origin: top;
 }
