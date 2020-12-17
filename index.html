@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>World Happiness Viz</title>
+    <!-- Mailchimp CSS -->
+    <!-- <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a28be7c7ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+
+  <body id="home">
+    <div class="splash-wrapper">
+      <!-- * * * * * * * * * * *  Nav  * * * * * * * * * * * -->
+      <header id="header">
+        <div class="pos-f-t splash-nav d-inline-flex flex-row-reverse">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Infographics</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="world_map.html" target="_blank"
+                    >Interactive Map</a
+                  >
+                  <a class="dropdown-item" href="whr_chart.html" target="_blank"
+                    >Interactive Plot</a
+                  >
+                  <a class="dropdown-item" href="table.html" target="_blank"
+                    >Interactive Table</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#subscribe">Subscribe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <nav class="navbar">
+            <button
+              class="btn"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="far fa-ellipsis-h fa-2x"></i>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <!-- * * * * * * * * * * Showcase  * * * * * * * * * * -->
+      <section id="showcase">
+        <div class="showcase-content">
+          <div class="text-center col-12">
+            <h1
+              class="text-uppercase mb-5 title title-viz animate__animated animate__zoomIn"
+            >
+              Visualizing
+            </h1>
+            <h1
+              class="text-uppercase mb-5 title title-wh animate__animated animate__flipInX animate__delay-1s"
+            >
+              World Happiness
+            </h1>
+            <a
+              href="#about"
+              class="text-uppercase mt-5 btn btn-outline-light animate__animated animate__fadeIn animate__delay-2s"
+              ><i class="far fa-chevron-right"></i> Explore</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- * * * * * * * * * * About Section * * * * * * * * * * -->
+    <section id="about" class="mt-5">
+      <div class="about-content container">
+        <h2 class="about-title text-uppercase row mb-5">About</h2>
+        <div class="about-what row">
+          <h4 class="col-2">What:</h4>
+          <p class="col-10">
+            The <strong>World Happiness Report</strong> is a landmark survey of
+            the state of global happiness that ranks 156 countries by how happy
+            their citizens perceive themselves to be. The report is produced by
+            the United Nations Sustainable Development Solutions Network in
+            partnership with the Ernesto Illy Foundation.
+          </p>
+        </div>
+        <div class="about-when row">
+          <h4 class="col-2">When:</h4>
+          <p class="col-10">
+            This report has been produced every year since its inception in
+            2012. Go to
+            <a href="https://worldhappiness.report/download/"
+              >worldhappiness.report/download</a
+            >
+            for more information.
+          </p>
+        </div>
+        <div class="about-how row">
+          <h4 class="col-2">How:</h4>
+          <p class="col-10">
+            The World Happiness reports present the results of analysis
+            performed on data coming from the Gallup World Polls. The happiness
+            rankings are based on answers to the main life evaluation question
+            asked in the poll. This is called the
+            <strong>Cantril ladder</strong>: it asks respondents to think of a
+            ladder, with the best possible life for them being a 10, and the
+            worst possible life being a 0. They are then asked to rate their own
+            current lives on that 0 to 10 scale.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- * * * * * * * * * Infographics Section * * * * * * * * * -->
+    <section id="infographics">
+      <div class="infographics-cards">
+        <!-- map -->
+        <div class="infographics-card">
+          <div class="infographics-card-img">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form
+        action="https://gmail.us7.list-manage.com/subscribe/post?u=67956e2365e9e067bee094aee&amp;id=377f04ee2d"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        class="validate"
+        target="_blank"
+        novalidate
+      >
+        <div id="mc_embed_signup_scroll">
+          <h2>Subscribe to receive updates</h2>
+          <div class="indicates-required">
+            <span class="asterisk">*</span> indicates required
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-EMAIL"
+              >Email <span class="asterisk">*</span>
+            </label>
+            <input
+              type="email"
+              value=""
+              name="EMAIL"
+              class="required email"
+              id="mce-EMAIL"
+            />
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-FNAME">First Name </label>
+            <input type="text" value="" name="FNAME" class="" id="mce-FNAME" />
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-LNAME">Last Name </label>
+            <input type="text" value="" name="LNAME" class="" id="mce-LNAME" />
+          </div>
+          <div id="mce-responses" class="clear">
+            <div
+              class="response"
+              id="mce-error-response"
+              style="display: none"
+            ></div>
+            <div
+              class="response"
+              id="mce-success-response"
+              style="display: none"
+            ></div>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px" aria-hidden="true">
+            <input
+              type="text"
+              name="b_67956e2365e9e067bee094aee_377f04ee2d"
+              tabindex="-1"
+              value=""
+            />
+          </div>
+          <div class="clear">
+            <input
+              type="submit"
+              value="Subscribe"
+              name="subscribe"
+              id="mc-embedded-subscribe"
+              class="button"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script
+      type="text/javascript"
+      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[4] = 'PHONE';
+        ftypes[4] = 'phone';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
+    </script>
+    <!--End mc_embed_signup-->
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

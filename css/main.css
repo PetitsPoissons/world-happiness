@@ -1,0 +1,137 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.8;
+}
+
+a {
+  color: #ff6a25;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff3cac;
+  text-decoration: none;
+}
+
+.splash-wrapper {
+  height: 100vh;
+  background: url(../assets/img/happy_crowd-min.jpeg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* ------- Nav Header ------- */
+.splash-nav nav {
+  background: transparent;
+}
+
+.splash-nav ul.navbar-nav {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+  align-items: center;
+}
+
+.splash-nav ul.navbar-nav li {
+  padding: 0.5vh 0 0 3vw;
+}
+
+.splash-nav ul.navbar-nav li a {
+  color: #a9b6f7;
+}
+
+.splash-nav button.btn,
+.splash-nav button.btn.collapsed {
+  border: none;
+  background-color: transparent;
+  transition: none;
+}
+
+.splash-nav nav button i {
+  color: #a9b6f7;
+  transition: transform 0.6s;
+}
+
+.splash-nav nav button i:hover {
+  transform: scale(1.3);
+}
+
+/* ------- Showcase Section ------- */
+section#showcase {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.showcase-content {
+  margin-top: 20vh;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 700;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.title-viz {
+  background-color: #ffcc70;
+  background-image: linear-gradient(45deg, #4158d0 30%, #fff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.title-wh {
+  background-color: #ffcc70;
+  background-image: -webkit-linear-gradient(
+    145deg,
+    #ffe53b 0%,
+    #ff3cac 50%,
+    #ff2525 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.showcase-content .btn.btn-outline-light:hover {
+  background: #ff6a25;
+  color: #fff;
+  border-color: #ff6a25;
+  transition: all 0.5s ease-in-out;
+}
+
+/* ----------- About Section ----------- */
+.about-title {
+  padding: 1rem 0;
+  position: relative;
+}
+
+.about-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.1rem;
+  width: 100%;
+  background-color: #ff6a25;
+}
