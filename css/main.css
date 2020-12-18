@@ -220,3 +220,26 @@ section#showcase {
   transform: scaleY(1);
   transform-origin: top;
 }
+
+/* Footer */
+.footer {
+  color: #fcf5ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 10rem;
+}
+
+.footer a {
+  color: #fcf5ef;
+}
+
+.footer a:hover {
+  color: #ff6a25;
+}
+
+.footer .social > * {
+  margin-right: 3rem;
+}
