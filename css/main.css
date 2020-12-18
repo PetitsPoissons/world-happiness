@@ -230,14 +230,22 @@ section#showcase {
   justify-content: center;
   text-align: center;
   height: 10rem;
+  background: url(../assets/img/happy_crowd-min.jpeg) no-repeat;
+  background-position-y: bottom;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
 }
 
-.footer a {
+.footer a i {
   color: #fcf5ef;
+  transition: transform 0.6s;
 }
 
-.footer a:hover {
-  color: #ff6a25;
+.footer a i:hover {
+  color: #a9b6f7;
+  transform: scale(1.3);
 }
 
 .footer .social > * {
