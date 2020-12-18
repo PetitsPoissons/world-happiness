@@ -23,6 +23,11 @@ a:hover {
   text-decoration: none;
 }
 
+.btn.btn-outline-light:hover {
+  color: #ff6a25;
+  border-color: #ff6a25;
+}
+
 .splash-wrapper {
   height: 100vh;
   background: url(../assets/img/happy_crowd-min.jpeg) no-repeat center center
@@ -113,22 +118,17 @@ section#showcase {
   -moz-text-fill-color: transparent;
 }
 
-.showcase-content .btn.btn-outline-light:hover {
-  background: #ff6a25;
-  color: #fff;
-  border-color: #ff6a25;
-  transition: all 0.5s ease-in-out;
-}
-
 /* ----------- Content Sections ----------- */
 .about-title,
-.infographics-title {
+.infographics-title,
+.subscribe-title {
   padding: 1rem 0;
   position: relative;
 }
 
 .about-title:after,
-.infographics-title:after {
+.infographics-title:after,
+.subscribe-title:after {
   content: '';
   position: absolute;
   bottom: 0;
