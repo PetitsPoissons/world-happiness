@@ -146,11 +146,11 @@
 
     <!-- * * * * * * * * * * About Section * * * * * * * * * * -->
     <section id="about" class="m-5">
-      <div class="about-content m-5">
-        <h2 class="about-title text-uppercase row mb-5">About</h2>
-        <div class="about-what row mx-5">
-          <h4 class="col-2">What:</h4>
-          <p class="col-10">
+      <div class="about-content mx-sm-4 mx-md-5">
+        <h2 class="about-title text-uppercase row">About</h2>
+        <div class="about-what row">
+          <h4 class="col-12 col-md-2">What:</h4>
+          <p class="col-12 col-md-10">
             This website showcases infographics built based on the
             <strong>World Happiness Report</strong>, which is a landmark survey
             of the state of global happiness that ranks 156 countries by how
@@ -160,9 +160,9 @@
             map, interactive charts, and an interactive data table.
           </p>
         </div>
-        <div class="about-when row mx-5">
-          <h4 class="col-2">When:</h4>
-          <p class="col-10">
+        <div class="about-when row">
+          <h4 class="col-12 col-md-2">When:</h4>
+          <p class="col-12 col-md-10">
             The World Happiness Report has been produced annually since 2012 by
             the United Nations Sustainable Development Solutions Network in
             partnership with the Ernesto Illy Foundation.
@@ -174,9 +174,9 @@
             for more information.
           </p>
         </div>
-        <div class="about-how row mx-5">
-          <h4 class="col-2">How:</h4>
-          <p class="col-10">
+        <div class="about-how row">
+          <h4 class="col-12 col-md-2">How:</h4>
+          <p class="col-12 col-md-10">
             The World Happiness reports present the results of analysis
             performed on data coming from the Gallup World Polls. The happiness
             rankings are based on answers to the main life evaluation question
@@ -196,8 +196,8 @@
 
     <!-- * * * * * * * * * Infographics Section * * * * * * * * * -->
     <section id="infographics" class="m-5">
-      <div class="infographics-content m-5">
-        <h2 class="infographics-title text-uppercase row mb-5">Infographics</h2>
+      <div class="infographics-content mx-sm-4 mx-md-5">
+        <h2 class="infographics-title text-uppercase row">Infographics</h2>
         <div class="infographics-cards container">
           <!-- chart -->
           <div class="infographics-card chart">
@@ -215,8 +215,8 @@
                 Hover over a country to get detailed information.
               </p>
               <a
-                href="#about"
-                class="text-uppercase btn btn-outline-light animate__animated animate__fadeIn animate__delay-1s"
+                href="whr_chart.html"
+                class="text-uppercase btn btn-outline-light infographics-card-btn"
                 ><i class="far fa-chevron-right"></i> Explore</a
               >
             </div>
@@ -240,7 +240,7 @@
               <a
                 href="world_map.html"
                 target="_blank"
-                class="text-uppercase btn btn-outline-light animate__animated animate__fadeIn animate__delay-1s"
+                class="text-uppercase btn btn-outline-light infographics-card-btn"
                 ><i class="far fa-chevron-right"></i> Explore</a
               >
             </div>
@@ -261,7 +261,7 @@
               </p>
               <a
                 href="table.html"
-                class="text-uppercase btn btn-outline-light animate__animated animate__fadeIn animate__delay-1s"
+                class="text-uppercase btn btn-outline-light infographics-card-btn"
                 ><i class="far fa-chevron-right"></i> Explore</a
               >
             </div>
@@ -285,7 +285,7 @@
               <a
                 href="world_map.html"
                 target="_blank"
-                class="text-uppercase btn btn-outline-light animate__animated animate__fadeIn animate__delay-1s"
+                class="text-uppercase btn btn-outline-light infographics-card-btn"
                 ><i class="far fa-chevron-right"></i> Explore</a
               >
             </div>
@@ -296,10 +296,10 @@
 
     <!-- * * * * * * * * * Subscribe Section * * * * * * * * * -->
     <section id="subscribe" class="m-5">
-      <div class="subscribe-content m-5">
-        <h2 class="subscribe-title text-uppercase row mb-5">Subscribe</h2>
+      <div class="subscribe-content mx-sm-4 mx-md-5">
+        <h2 class="subscribe-title text-uppercase row">Subscribe</h2>
         <!-- Begin Mailchimp Signup Form -->
-        <div id="mc_embed_signup" class="row mx-5">
+        <div id="mc_embed_signup" class="row">
           <form
             action="https://gmail.us7.list-manage.com/subscribe/post?u=67956e2365e9e067bee094aee&amp;id=377f04ee2d"
             method="post"
@@ -382,7 +382,7 @@
                   value="Subscribe"
                   name="subscribe"
                   id="mc-embedded-subscribe"
-                  class="button btn btn-secondary text-uppercase"
+                  class="button btn btn-secondary text-uppercase mt-3"
                 />
               </div>
             </div>
@@ -395,7 +395,9 @@
     <!-- * * * * * * * * * * Footer * * * * * * * * * * -->
     <footer class="footer bg-secondary">
       <div class="social mb-3">
-        <a href="https://www.sandrinepoissonnet.online" target="_blank"
+        <a
+          href="https://petitspoissons.github.io/react-portfolio/"
+          target="_blank"
           ><i class="fal fa-globe fa-2x"></i
         ></a>
         <a
@@ -407,7 +409,10 @@
           ><i class="fab fa-github fa-2x"></i
         ></a>
       </div>
-      <p>Copyright &copy; 2020 - Made with enthusiasm by Sandrine Poissonnet</p>
+      <p>
+        Made with enthusiasm by Sandrine Poissonnet<br />
+        Copyright &copy; 2020 - All rights reserved
+      </p>
     </footer>
 
     <!-- Mailchimp JavaScript -->
