@@ -133,7 +133,7 @@ function makeResponsive() {
     }
 
     // Retrieve data from the csv file and create chart
-    d3.csv("https://petitspoissons.github.io/WHR2019/assets/data/whr_2018.csv").then(data => {
+    d3.csv("./assets/data/whr_2018.csv").then(data => {
 
         // Parse data
         data.forEach(d => {
