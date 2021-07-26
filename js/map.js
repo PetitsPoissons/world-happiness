@@ -45,7 +45,7 @@ d3.json(
 
   // Moving on to the 2016 geodata
   d3.json(
-    'https://petitspoissons.github.io/WHR2019/assets/data/geodata_2016.json'
+    './data/geodata_2016.json'
   ).then((data2016) => {
     layer2016 = createChoropleth(data2016);
     features_2016 = data2016.features;
@@ -54,7 +54,7 @@ d3.json(
 
     // Moving on to the 2012 geodata
     d3.json(
-      'https://petitspoissons.github.io/WHR2019/assets/data/geodata_2012.json'
+      './data/geodata_2012.json'
     ).then((data2012) => {
       layer2012 = createChoropleth(data2012);
       features_2012 = data2012.features;
@@ -63,7 +63,7 @@ d3.json(
 
       // Moving on to the 2008 geodata
       d3.json(
-        'https://petitspoissons.github.io/WHR2019/assets/data/geodata_2008.json'
+        './data/geodata_2008.json'
       ).then((data2008) => {
         layer2008 = createChoropleth(data2008);
         features_2008 = data2008.features;
