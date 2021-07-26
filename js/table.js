@@ -8,7 +8,7 @@ var buttonAll = d3.select("#all-btn");
 /* MAIN ACTIVITY */
 
 // load the whr_data.csv file
-d3.csv("https://petitspoissons.github.io/WHR2019/assets/data/whr_all_years.csv").then(countryData => {
+d3.csv("../assets/data/whr_all_years.csv").then(countryData => {
 
     // populate the table with all data when first loading the page
     populateTable(countryData);

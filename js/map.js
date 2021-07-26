@@ -2,7 +2,7 @@ var happinessLayer;
 var layer2018;
 var inequalityLayer2018;
 var layer2016;
-
+console.log(API_KEY)
 // Define map object
 var myMap = L.map('map', {
   center: [40, 30],
